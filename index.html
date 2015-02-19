@@ -24,6 +24,10 @@
     <![endif]-->
     
     <script src="assets/js/modernizr.js"></script>
+
+
+    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&signed_in=true&libraries=places"></script>
+
   </head>
 
   <body>
@@ -35,7 +39,7 @@
 	    <div class="container">
 			<div class="row">
 				<div class="col-md-8 col-md-offset-2">
-					<h3>Dear Minnesota,</h3>
+					<h3>Dear Minnesotans,</h3>
 					<h1>It's time to speak out for your right to repair</h1>
 					<p>Right now, Minnesota has a chance to pass the first Fair Repair bill in the nation. We have a chance to guarantee our right to repair electronics—like smartphones, computers, and even farm equipment. We have a chance to help the environment and stand up for local repair jobs—the corner mom-and-pop repair shops that keep getting squeezed out by manufacturers.</p>
           <p>We’ve been working with local repair companies, non-profit refurbishers, and tech-savvy politicians to come up with a solution. The Fair Repair Bill, also known as HF 1048, requires manufacturers to provide owners and independent repair businesses with fair access to service information, security updates, and replacement parts.
@@ -60,9 +64,16 @@
       <div id="tellstory" class="col-md-10 col-md-offset-1">
         <h3 >Tell your repair story</h3>
         <div class="hline"></div>
+
+        <link href='https://actionnetwork.org/css/style-embed.css' rel='stylesheet' type='text/css' /><script>window.yepnope || document.write('<script src="https://actionnetwork.org/assets/yepnope154-min.js"><\/script>');</script><script src='https://actionnetwork.org/widgets/v2/letter/support-the-fair-repair-bill-hf-1048?format=js&referrer=sina-khanifar&source=widget'></script><div id='can-letter-area-support-the-fair-repair-bill-hf-1048' style='width: 100%'><!-- this div is the target for our HTML insertion --></div>
+        <style>
+        #can_embed_form {
+          border: 0 !important;
+          }
+        </style>
       </div>
     </div>
-	 	
+	 	<!-- 
     <div class="row">
 
 	 		<div class="col-md-4 col-md-offset-1">
@@ -72,11 +83,22 @@
 	 		
 	 		<div class="col-md-6">
 
+
         <form id="contact-form" class="form-horizontal">
+            
+          <input class="field" id="street_number" hidden="true"></input>
+          <input class="field" id="route" hidden="true"></input></td>
+          <input class="field" id="locality" hidden="true"></input>
+          <input class="field" id="administrative_area_level_1" hidden="true"></input>
+          <input class="field" id="postal_code" hidden="true"></input>
+          <input class="field" id="country" hidden="true"></input>
+          <input class="field" id="lat" hidden="true"></input>
+          <input class="field" id="lng" hidden="true"></input>
+
           <div class="form-group">
-            <label for="inputEmail3" class="col-sm-3 control-label">Your Address</label>
+            <label for="inputAddress" class="col-sm-3 control-label">Your Address</label>
             <div class="col-sm-9">
-              <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
+              <input type="text" class="form-control" id="inputAddress" placeholder="100 Washington Ave, Minneapolis, MN">
             </div>
           </div>
           <div class="form-group">
@@ -109,8 +131,8 @@
 
 	 		</div>
 	 		
-	 	</div><! --/row -->
-	 </div><! --/container -->
+	 	</div> -->
+	 </div>
 	 
 	<!-- *****************************************************************************************************************
 	 OUR CLIENTS
@@ -177,6 +199,11 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
 	<script src="assets/js/retina-1.1.0.js"></script>
-
+  <script src="assets/js/google-maps.js"></script>
+  <script>
+  $(function() {
+    initialize();
+  });
+  </script>
   </body>
 </html>
