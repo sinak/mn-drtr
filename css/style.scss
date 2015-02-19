@@ -348,6 +348,23 @@ a:focus {
 	margin-bottom: 60px;
 }
 
+#cwrap .logo {
+   display: block;
+   padding: 0 16%;
+}
+
+#cwrap .logo.ifixit {
+   padding-top: 38px;
+}
+
+#cwrap .logo.drtr {
+   padding-top: 28px;
+}
+
+#cwrap .logo img {
+   width: 100%;
+}
+
 /* Footer */
 #footerwrap {
 	padding-top: 60px;
