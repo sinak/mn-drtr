@@ -224,6 +224,20 @@ a:focus {
 	}
 }
 
+#headerwrap a {
+   color: white;
+   font-weight: 400;
+   border-bottom: 2px solid white;
+   padding-bottom: 2px;
+	-webkit-transition: padding-bottom 0.2s ease;
+	-moz-transition: padding-bottom 0.2s ease;
+	transition: padding-bottom 0.2s ease;
+}
+
+#headerwrap a:hover {
+   padding-bottom: 4px;
+}
+
 #headerwrap .img-responsive {
 	margin: 0 auto;
 }
